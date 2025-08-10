@@ -1,0 +1,6 @@
+bulk_download:
+  js:
+    js/bulk_download.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

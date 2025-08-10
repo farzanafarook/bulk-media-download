@@ -1,0 +1,11 @@
+name: Bulk Media Download
+type: module
+description: 'perform bulk download on selected entities from view results.'
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:views
+  - drupal:views_bulk_operations
+  - drupal:media
+libraries:
+  - bulk_media_download/bulk_download

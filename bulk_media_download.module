@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains code to alter the view for bulk download operations.
+ */
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function bulk_media_download_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'bulk_download') {
+    $view->element['#attached']['library'][] = 'bulk_media_download/bulk_download';
+  }
+}

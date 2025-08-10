@@ -1,0 +1,15 @@
+bulk_media_download.settings:
+  path: '/admin/structure/views/settings/bulk_media_download_settings'
+  defaults:
+    _form: '\Drupal\bulk_media_download\Form\BulkMediaDownloadSettingsForm'
+    _title: 'Bulk Media Download Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+bulk_media_download.download_zip:
+  path: '/bulk_media_download/download-zip'
+  defaults:
+    _controller: '\Drupal\bulk_media_download\Controller\BulkDownloadController::downloadZip'
+    _title: 'Download ZIP'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,4 @@
+bulk_media_download.settings_tab:
+  route_name: bulk_media_download.settings
+  title: Bulk Media Download
+  base_route: entity.view.collection
